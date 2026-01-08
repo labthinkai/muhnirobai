@@ -1,0 +1,1325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover the vision behind Nirob Digital: Creating 6,400 sustainable digital careers while revolutionizing the global podcast industry with AI solutions.">
+    <title>Welcome to Nirob Digital | The 6,400 Careers Mission</title>
+    <style>
+        :root {
+            --primary-blue: #2563EB;
+            --secondary-purple: #7C3AED;
+            --accent-green: #10B981;
+            --accent-teal: #14B8A6;
+            --dark-navy: #0F172A;
+            --light-gray: #F8FAFC;
+            --medium-gray: #E2E8F0;
+            --gradient-1: linear-gradient(135deg, #2563EB 0%, #7C3AED 50%, #10B981 100%);
+            --gradient-2: linear-gradient(135deg, #0F172A 0%, #1E293B 100%);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, 'SF Pro Display', sans-serif;
+            line-height: 1.7;
+            color: #1E293B;
+            background: linear-gradient(135deg, #F1F5F9 0%, #E2E8F0 100%);
+            min-height: 100vh;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 24px;
+            box-shadow: 
+                0 20px 60px rgba(0, 0, 0, 0.08),
+                0 5px 20px rgba(37, 99, 235, 0.05);
+            overflow: hidden;
+            margin-bottom: 50px;
+            border: 1px solid rgba(226, 232, 240, 0.8);
+        }
+        
+        .header {
+            background: var(--gradient-2);
+            color: white;
+            padding: 80px 40px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                radial-gradient(circle at 20% 80%, rgba(37, 99, 235, 0.15) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(124, 58, 237, 0.15) 0%, transparent 50%),
+                radial-gradient(circle at 40% 40%, rgba(16, 185, 129, 0.1) 0%, transparent 50%);
+        }
+        
+        .particles {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+        }
+        
+        .particle {
+            position: absolute;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            animation: float 6s infinite ease-in-out;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(180deg); }
+        }
+        
+        .header-content {
+            position: relative;
+            z-index: 10;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .logo-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+        
+        .logo-icon {
+            width: 60px;
+            height: 60px;
+            background: var(--gradient-1);
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            color: white;
+            box-shadow: 0 10px 30px rgba(37, 99, 235, 0.3);
+        }
+        
+        .logo {
+            font-size: 3.2rem;
+            font-weight: 800;
+            background: var(--gradient-1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            letter-spacing: -1px;
+        }
+        
+        .tagline {
+            font-size: 1.4rem;
+            opacity: 0.9;
+            max-width: 700px;
+            margin: 0 auto 40px;
+            line-height: 1.8;
+            font-weight: 300;
+        }
+        
+        .mission-badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            padding: 15px 30px;
+            border-radius: 50px;
+            margin-bottom: 30px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+        }
+        
+        .mission-number {
+            font-size: 6.5rem;
+            font-weight: 900;
+            background: linear-gradient(135deg, #10B981 0%, #14B8A6 50%, #0EA5E9 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-shadow: 0 10px 40px rgba(16, 185, 129, 0.3);
+            margin: 20px 0;
+            line-height: 1;
+            position: relative;
+        }
+        
+        .mission-number::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 200px;
+            height: 4px;
+            background: var(--gradient-1);
+            border-radius: 2px;
+        }
+        
+        .mission-text {
+            font-size: 2.2rem;
+            font-weight: 700;
+            margin-bottom: 50px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.3;
+        }
+        
+        .scroll-indicator {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            animation: bounce 2s infinite;
+        }
+        
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {transform: translateY(0) translateX(-50%);}
+            40% {transform: translateY(-20px) translateX(-50%);}
+            60% {transform: translateY(-10px) translateX(-50%);}
+        }
+        
+        .content {
+            padding: 80px 40px;
+        }
+        
+        .section {
+            margin-bottom: 80px;
+            position: relative;
+        }
+        
+        .section-title {
+            color: var(--dark-navy);
+            font-size: 2.2rem;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 3px solid;
+            border-image: var(--gradient-1) 1;
+            display: inline-block;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+        }
+        
+        .section-subtitle {
+            color: var(--secondary-purple);
+            font-size: 1.5rem;
+            margin: 35px 0 20px;
+            font-weight: 700;
+            position: relative;
+            padding-left: 20px;
+        }
+        
+        .section-subtitle::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 8px;
+            height: 8px;
+            background: var(--accent-green);
+            border-radius: 50%;
+        }
+        
+        p {
+            margin-bottom: 25px;
+            font-size: 1.15rem;
+            line-height: 1.8;
+        }
+        
+        .highlight-box {
+            background: linear-gradient(135deg, rgba(37, 99, 235, 0.03) 0%, rgba(124, 58, 237, 0.03) 100%);
+            border-left: 5px solid;
+            border-image: var(--gradient-1) 1;
+            padding: 35px;
+            margin: 40px 0;
+            border-radius: 0 16px 16px 0;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .highlight-box::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, transparent 0%, rgba(255, 255, 255, 0.8) 100%);
+            z-index: 1;
+        }
+        
+        .highlight-box > * {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .quote {
+            font-style: italic;
+            font-size: 1.3rem;
+            color: var(--dark-navy);
+            border-left: 4px solid var(--accent-green);
+            padding-left: 25px;
+            margin: 35px 0;
+            background: rgba(16, 185, 129, 0.05);
+            padding: 25px;
+            border-radius: 0 12px 12px 0;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 25px;
+            margin: 50px 0;
+        }
+        
+        .stat-card {
+            background: white;
+            padding: 35px 25px;
+            border-radius: 20px;
+            text-align: center;
+            border: 2px solid transparent;
+            background-clip: padding-box;
+            position: relative;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        
+        .stat-card::before {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            background: var(--gradient-1);
+            border-radius: 20px;
+            z-index: -1;
+            opacity: 0;
+            transition: opacity 0.4s;
+        }
+        
+        .stat-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(37, 99, 235, 0.15);
+        }
+        
+        .stat-card:hover::before {
+            opacity: 1;
+        }
+        
+        .stat-icon {
+            width: 70px;
+            height: 70px;
+            background: var(--gradient-1);
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            font-size: 28px;
+            color: white;
+        }
+        
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 900;
+            background: var(--gradient-1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 10px;
+            line-height: 1;
+        }
+        
+        .stat-label {
+            color: var(--dark-navy);
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+        
+        .countries-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 20px;
+            margin: 40px 0;
+        }
+        
+        .country-card {
+            background: white;
+            border: 2px solid var(--medium-gray);
+            padding: 25px 20px;
+            border-radius: 16px;
+            text-align: center;
+            font-weight: 600;
+            transition: all 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .country-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: var(--gradient-1);
+            transform: scaleX(0);
+            transition: transform 0.3s;
+        }
+        
+        .country-card:hover {
+            border-color: transparent;
+            box-shadow: 0 15px 30px rgba(124, 58, 237, 0.1);
+            transform: translateY(-5px);
+        }
+        
+        .country-card:hover::before {
+            transform: scaleX(1);
+        }
+        
+        .country-flag {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            display: block;
+        }
+        
+        .timeline-container {
+            position: relative;
+            margin: 60px 0;
+            padding-left: 40px;
+        }
+        
+        .timeline-container::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 4px;
+            background: var(--gradient-1);
+            border-radius: 2px;
+        }
+        
+        .timeline-item {
+            margin-bottom: 40px;
+            position: relative;
+            padding-left: 40px;
+        }
+        
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -46px;
+            top: 10px;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: white;
+            border: 4px solid var(--primary-blue);
+            box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.2);
+            z-index: 2;
+        }
+        
+        .timeline-year {
+            font-weight: 800;
+            color: var(--primary-blue);
+            margin-bottom: 10px;
+            font-size: 1.3rem;
+            background: rgba(37, 99, 235, 0.1);
+            padding: 8px 20px;
+            border-radius: 50px;
+            display: inline-block;
+        }
+        
+        .timeline-content {
+            background: linear-gradient(135deg, rgba(248, 250, 252, 0.8) 0%, rgba(241, 245, 249, 0.8) 100%);
+            padding: 30px;
+            border-radius: 20px;
+            border: 2px solid transparent;
+            background-clip: padding-box;
+            position: relative;
+        }
+        
+        .timeline-content::before {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            background: var(--gradient-1);
+            border-radius: 20px;
+            z-index: -1;
+        }
+        
+        .income-model {
+            background: var(--gradient-2);
+            color: white;
+            padding: 50px;
+            border-radius: 24px;
+            margin: 60px 0;
+        }
+        
+        .income-model h3 {
+            color: white;
+            margin-bottom: 30px;
+            font-size: 1.8rem;
+        }
+        
+        .model-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+        
+        .model-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 30px;
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .model-number {
+            font-size: 2.5rem;
+            font-weight: 900;
+            color: var(--accent-green);
+            margin-bottom: 10px;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin: 40px 0;
+        }
+        
+        .feature-card {
+            background: white;
+            padding: 30px;
+            border-radius: 20px;
+            border: 2px solid var(--medium-gray);
+            transition: all 0.3s;
+        }
+        
+        .feature-card:hover {
+            border-color: var(--accent-green);
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(16, 185, 129, 0.1);
+        }
+        
+        .feature-icon {
+            width: 60px;
+            height: 60px;
+            background: rgba(16, 185, 129, 0.1);
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            color: var(--accent-green);
+            font-size: 24px;
+        }
+        
+        .cta-section {
+            background: var(--gradient-1);
+            color: white;
+            padding: 80px 40px;
+            text-align: center;
+            border-radius: 30px;
+            margin-top: 60px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .cta-section::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
+            animation: rotate 20s linear infinite;
+        }
+        
+        @keyframes rotate {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        .cta-content {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .cta-title {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            font-weight: 800;
+            line-height: 1.3;
+        }
+        
+        .cta-subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            max-width: 700px;
+            margin: 0 auto 40px;
+            line-height: 1.8;
+        }
+        
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+        
+        .btn {
+            padding: 18px 40px;
+            border-radius: 50px;
+            font-weight: 700;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            font-size: 1.1rem;
+            border: 2px solid transparent;
+            min-width: 220px;
+            text-align: center;
+        }
+        
+        .btn-primary {
+            background: white;
+            color: var(--primary-blue);
+            box-shadow: 0 10px 30px rgba(255, 255, 255, 0.2);
+        }
+        
+        .btn-primary:hover {
+            background: var(--accent-green);
+            color: white;
+            transform: translateY(-5px) scale(1.05);
+            box-shadow: 0 20px 40px rgba(16, 185, 129, 0.3);
+        }
+        
+        .btn-secondary {
+            background: transparent;
+            color: white;
+            border-color: white;
+        }
+        
+        .btn-secondary:hover {
+            background: white;
+            color: var(--primary-blue);
+            transform: translateY(-5px) scale(1.05);
+        }
+        
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 50px;
+            flex-wrap: wrap;
+        }
+        
+        .social-link {
+            width: 55px;
+            height: 55px;
+            background: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary-blue);
+            text-decoration: none;
+            font-size: 1.3rem;
+            transition: all 0.3s;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .social-link:hover {
+            transform: translateY(-5px) scale(1.1);
+            box-shadow: 0 10px 25px rgba(37, 99, 235, 0.2);
+            color: var(--accent-green);
+        }
+        
+        .social-link.linkedin:hover { background: #0077B5; color: white; }
+        .social-link.twitter:hover { background: #1DA1F2; color: white; }
+        .social-link.instagram:hover { background: linear-gradient(45deg, #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D); color: white; }
+        .social-link.threads:hover { background: #000000; color: white; }
+        
+        .footer {
+            text-align: center;
+            padding: 60px 20px;
+            color: #64748B;
+            font-size: 1rem;
+            border-top: 1px solid var(--medium-gray);
+            margin-top: 60px;
+            background: var(--light-gray);
+            border-radius: 0 0 24px 24px;
+        }
+        
+        .footer-logo {
+            font-size: 2rem;
+            font-weight: 800;
+            background: var(--gradient-1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 20px;
+            letter-spacing: -1px;
+        }
+        
+        .footer-tagline {
+            font-size: 1.1rem;
+            color: var(--dark-navy);
+            margin-bottom: 30px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.8;
+        }
+        
+        .copyright {
+            margin-top: 30px;
+            font-size: 0.9rem;
+            opacity: 0.7;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 992px) {
+            .content, .header {
+                padding: 60px 30px;
+            }
+            
+            .mission-number {
+                font-size: 5rem;
+            }
+            
+            .mission-text {
+                font-size: 1.8rem;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 15px;
+            }
+            
+            .header, .content {
+                padding: 50px 20px;
+            }
+            
+            .mission-number {
+                font-size: 4rem;
+            }
+            
+            .mission-text {
+                font-size: 1.5rem;
+            }
+            
+            .section-title {
+                font-size: 1.8rem;
+            }
+            
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .btn {
+                width: 100%;
+                max-width: 320px;
+            }
+            
+            .income-model, .highlight-box {
+                padding: 30px 20px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .logo {
+                font-size: 2.5rem;
+            }
+            
+            .mission-number {
+                font-size: 3.5rem;
+            }
+            
+            .tagline {
+                font-size: 1.1rem;
+            }
+            
+            .content {
+                padding: 40px 20px;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header class="header">
+            <div class="particles" id="particles"></div>
+            <div class="header-content">
+                <div class="logo-container">
+                    <div class="logo-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h1 class="logo">NirobDigital</h1>
+                </div>
+                
+                <div class="mission-badge">Global Vision 2024-2034</div>
+                
+                <p class="tagline">Where Bangladeshi innovation meets global podcast industry excellence. We're building the world's largest AI-powered digital workforce ecosystem, starting with 6,400 sustainable careers and expanding across continents.</p>
+                
+                <div class="mission-number" id="counter">0</div>
+                <div class="mission-text">Digital Careers in Creation<br><span style="font-size: 1.2rem; opacity: 0.9;">$32,000 Monthly Impact Revenue</span></div>
+                
+                <p style="max-width: 700px; margin: 0 auto;">From Dhaka to the world's podcast capitals – we're revolutionizing how content gets created, edited, and monetized through artificial intelligence and human ingenuity.</p>
+            </div>
+            
+            <div class="scroll-indicator">
+                <i class="fas fa-chevron-down" style="color: white; font-size: 24px;"></i>
+            </div>
+        </header>
+        
+        <!-- Main Content -->
+        <main class="content">
+            <!-- Introduction Section -->
+            <section class="section">
+                <h2 class="section-title">Welcome to the Digital Revolution</h2>
+                
+                <p>Dear Future Partner, Innovator, and Change-Maker,</p>
+                
+                <div class="highlight-box">
+                    <p>I'm <strong>Nirob</strong>, a father, entrepreneur, and visionary from Bangladesh. Every morning, I wake up to two realities: the immediate needs of my family in our Dhaka home, and the massive global opportunity in the $4.2 billion podcast industry. These two worlds are about to collide in the most beautiful way.</p>
+                </div>
+                
+                <p>While my sons Takbir and Tanzim prepare for school, I'm preparing to connect thousands of talented digital creators from Bangladesh and South Asia with podcast studios in New York, London, Toronto, Sydney, and Berlin. The math is simple but profound:</p>
+                
+                <div class="quote">
+                    "6,400 creators × $200 monthly income × $5 platform fee = Sustainable livelihoods for families + $32,000 monthly impact revenue to fuel more opportunities"
+                </div>
+                
+                <p>This isn't just business. This is <strong>economic transformation</strong>. This is <strong>dignity through digital work</strong>. This is proving that talent is equally distributed, but opportunity is not – and we're changing that equation forever.</p>
+            </section>
+            
+            <!-- The Global Problem -->
+            <section class="section">
+                <h2 class="section-title">The $4.2 Billion Imbalance We're Solving</h2>
+                
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-microphone"></i>
+                        </div>
+                        <div class="stat-number">464M</div>
+                        <div class="stat-label">Global Podcast Listeners</div>
+                        <p style="font-size: 0.9rem; margin-top: 10px; opacity: 0.8;">Growing at 20% annually</p>
+                    </div>
+                    
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="stat-number">15-20</div>
+                        <div class="stat-label">Hours per Episode</div>
+                        <p style="font-size: 0.9rem; margin-top: 10px; opacity: 0.8;">Production time needed</p>
+                    </div>
+                    
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-dollar-sign"></i>
+                        </div>
+                        <div class="stat-number">73%</div>
+                        <div class="stat-label">Seek More Revenue</div>
+                        <p style="font-size: 0.9rem; margin-top: 10px; opacity: 0.8;">Podcasters need monetization help</p>
+                    </div>
+                    
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="stat-number">200M+</div>
+                        <div class="stat-label">Digital Creators in Asia</div>
+                        <p style="font-size: 0.9rem; margin-top: 10px; opacity: 0.8;">Seeking global opportunities</p>
+                    </div>
+                </div>
+                
+                <div class="section-subtitle">The Pain Points We Address:</div>
+                
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-headphones"></i>
+                        </div>
+                        <h3>For Podcasters</h3>
+                        <p>High production costs, time-consuming editing, difficulty finding reliable talent, complex monetization, and AI tool overwhelm.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h3>For Digital Creators</h3>
+                        <p>Limited local opportunities, payment insecurity, skill gaps for global work, no career progression, and lack of benefits.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <h3>For the Industry</h3>
+                        <p>Talent shortage in developed markets, inefficient workflows, lack of diversity, and unsustainable cost structures.</p>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- The Solution -->
+            <section class="section">
+                <h2 class="section-title">Our Triple-Win Ecosystem</h2>
+                
+                <div class="highlight-box">
+                    <h3 style="color: var(--primary-blue); margin-bottom: 20px;">The Nirob Digital Formula:</h3>
+                    <p><strong>AI Technology + Vetted Talent + Strategic Systems =</strong></p>
+                    <p style="font-size: 1.3rem; margin: 20px 0;">60% cost reduction for podcasters + $200+ monthly income for creators + $32,000 platform impact revenue</p>
+                </div>
+                
+                <div class="section-subtitle">Phase 1: The Foundation (2024-2025)</div>
+                <p>We're starting with 400 carefully selected creators who will receive:</p>
+                
+                <div class="timeline-container">
+                    <div class="timeline-item">
+                        <div class="timeline-year">Q3-Q4 2024</div>
+                        <div class="timeline-content">
+                            <h4>AI-Powered Training Academy</h4>
+                            <p>• Specialized courses in podcast editing with Descript, Riverside, Audacity<br>
+                            • AI tool mastery: ChatGPT for show notes, DALL-E for thumbnails, ElevenLabs for voice cloning<br>
+                            • International communication and timezone management<br>
+                            • Quality assurance protocols and client management</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-year">Q1 2025</div>
+                        <div class="timeline-content">
+                            <h4>Pilot Program Launch</h4>
+                            <p>• First 100 creators begin working with international clients<br>
+                            • AI matching system beta testing<br>
+                            • Monthly income guarantee: $200 minimum<br>
+                            • Health insurance pilot for first cohort</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Income Model -->
+            <section class="section">
+                <h2 class="section-title">The Financial Architecture</h2>
+                
+                <div class="income-model">
+                    <h3>Revenue & Impact Model</h3>
+                    <p style="opacity: 0.9; margin-bottom: 30px;">Every dollar creates circular value that fuels more opportunities</p>
+                    
+                    <div class="model-grid">
+                        <div class="model-card">
+                            <div class="model-number">$200</div>
+                            <p><strong>Creator Income</strong><br>Minimum monthly earnings per creator</p>
+                        </div>
+                        
+                        <div class="model-card">
+                            <div class="model-number">$5</div>
+                            <p><strong>Platform Fee</strong><br>Sustainable commission per creator</p>
+                        </div>
+                        
+                        <div class="model-card">
+                            <div class="model-number">$32,000</div>
+                            <p><strong>Monthly Revenue</strong><br>At full scale (6,400 creators)</p>
+                        </div>
+                        
+                        <div class="model-card">
+                            <div class="model-number">$1.28M</div>
+                            <p><strong>Creator Payout</strong><br>Monthly total to 6,400 creators</p>
+                        </div>
+                    </div>
+                    
+                    <p style="margin-top: 30px; opacity: 0.9; font-size: 1.1rem;">Plus: Affiliate income from equipment sales, premium services, consulting, and digital products.</p>
+                </div>
+            </section>
+            
+            <!-- Target Markets Deep Dive -->
+            <section class="section">
+                <h2 class="section-title">Global Market Strategy</h2>
+                
+                <p>We're not just targeting countries – we're solving specific problems in each market:</p>
+                
+                <div class="countries-grid">
+                    <div class="country-card">
+                        <span class="country-flag">🇺🇸</span>
+                        <strong>United States</strong>
+                        <p style="font-size: 0.9rem; margin-top: 10px; font-weight: normal;">High production costs, talent shortage, scaling challenges</p>
+                    </div>
+                    
+                    <div class="country-card">
+                        <span class="country-flag">🇬🇧</span>
+                        <strong>United Kingdom</strong>
+                        <p style="font-size: 0.9rem; margin-top: 10px; font-weight: normal;">Brexit talent gap, premium content demand, BBC standards</p>
+                    </div>
+                    
+                    <div class="country-card">
+                        <span class="country-flag">🇨🇦</span>
+                        <strong>Canada</strong>
+                        <p style="font-size: 0.9rem; margin-top: 10px; font-weight: normal;">Bilingual needs, US competition, remote work adoption</p>
+                    </div>
+                    
+                    <div class="country-card">
+                        <span class="country-flag">🇦🇺</span>
+                        <strong>Australia</strong>
+                        <p style="font-size: 0.9rem; margin-top: 10px; font-weight: normal;">Timezone challenges, high wages, growing market</p>
+                    </div>
+                    
+                    <div class="country-card">
+                        <span class="country-flag">🇩🇪</span>
+                        <strong>Germany</strong>
+                        <p style="font-size: 0.9rem; margin-top: 10px; font-weight: normal;">Technical precision, engineering mindset, EU regulations</p>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Personal Story & Commitment -->
+            <section class="section">
+                <h2 class="section-title">Why This Matters: A Personal Promise</h2>
+                
+                <p>My daily life in Dhaka involves managing four parallel realities:</p>
+                
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <h3>Family Life</h3>
+                        <p>Monthly expenses: ৳11,000 + ৳6,500 + ৳3,200 = ৳20,700<br>
+                        Takbir (Grade 7) & Tanzim (Grade 2) education<br>
+                        Building their future in a digital world</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <h3>Business Life</h3>
+                        <p>৳300 daily expenses in Dhaka<br>
+                        Local business operations<br>
+                        Bangladesh market dynamics</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-laptop"></i>
+                        </div>
+                        <h3>Digital Life</h3>
+                        <p>USA/UK/CA/AU/DE podcast markets<br>
+                        AI technology mastery<br>
+                        Global partnership building</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h3>Spiritual Life</h3>
+                        <p>Purpose-driven work<br>
+                        Community impact<br>
+                        Legacy building</p>
+                    </div>
+                </div>
+                
+                <div class="quote">
+                    "When I look at my children, I see 6,400 children. When I worry about school fees, I think of 6,400 families. When I dream of a better future, I'm building it for 6,400 households. This isn't a business plan – it's a life commitment."
+                </div>
+            </section>
+            
+            <!-- The Full Vision Timeline -->
+            <section class="section">
+                <h2 class="section-title">The 10-Year Journey: 2024-2034</h2>
+                
+                <div class="timeline-container">
+                    <div class="timeline-item">
+                        <div class="timeline-year">Phase 1: 2024-2025</div>
+                        <div class="timeline-content">
+                            <h4>Foundation & Validation</h4>
+                            <p>• 400 creators trained and deployed<br>
+                            • AI matching platform MVP<br>
+                            • First $10,000 monthly revenue<br>
+                            • 50 satisfied international clients<br>
+                            • Health insurance pilot launched</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-year">Phase 2: 2025-2027</div>
+                        <div class="timeline-content">
+                            <h4>Scale & Systematize</h4>
+                            <p>• 2,000 active creators<br>
+                            • $50,000 monthly platform revenue<br>
+                            • Full benefits package: Health, life insurance<br>
+                            • Advanced AI automation systems<br>
+                            • Print-on-demand expansion</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-year">Phase 3: 2027-2030</div>
+                        <div class="timeline-content">
+                            <h4>Dominance & Expansion</h4>
+                            <p>• Full 6,400 creator ecosystem<br>
+                            • $32,000+ monthly platform revenue<br>
+                            • $1.28M monthly creator payouts<br>
+                            • Retirement benefits program<br>
+                            • New verticals: Video, translation, AR</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-year">Phase 4: 2030-2034</div>
+                        <div class="timeline-content">
+                            <h4>Global Leadership</h4>
+                            <p>• 25,000+ creator community<br>
+                            • Multiple international offices<br>
+                            • AI research and development center<br>
+                            • Global digital work standards<br>
+                            • Legacy foundation for education</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- CTA Section -->
+            <div class="cta-section">
+                <div class="cta-content">
+                    <h2 class="cta-title">Your Role in This Journey</h2>
+                    <p class="cta-subtitle">Whether you're a podcaster needing support, a digital creator seeking opportunity, an investor believing in impact, or simply someone inspired by this vision – there's a place for you here.</p>
+                    
+                    <div class="cta-buttons">
+                        <a href="https://digitalnirobai.blogspot.com/" class="btn btn-primary">
+                            <i class="fas fa-book-open"></i> Start with Free Resources
+                        </a>
+                        <a href="mailto:monbodol@proton.me?subject=Joining%20the%206400%20Careers%20Mission&body=Hi%20Nirob,%20I%20want%20to%20learn%20more%20about..." class="btn btn-secondary">
+                            <i class="fas fa-handshake"></i> Partner with Us
+                        </a>
+                        <a href="#application" class="btn btn-secondary" onclick="showApplicationForm()">
+                            <i class="fas fa-user-plus"></i> Apply as Creator
+                        </a>
+                    </div>
+                    
+                    <p style="margin-top: 40px; font-size: 1.1rem; opacity: 0.9;">
+                        <i class="fas fa-quote-left" style="margin-right: 10px;"></i>
+                        The best time to plant a tree was 20 years ago. The second best time is now. Let's plant 6,400 trees of opportunity together.
+                        <i class="fas fa-quote-right" style="margin-left: 10px;"></i>
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Creator Application Form (Hidden Initially) -->
+            <div id="application-form" style="display: none; margin-top: 60px; background: white; padding: 40px; border-radius: 20px; box-shadow: 0 10px 40px rgba(0,0,0,0.1);">
+                <h2 style="color: var(--dark-navy); margin-bottom: 30px;">Apply for Creator Program</h2>
+                <form id="creatorForm">
+                    <div style="display: grid; gap: 20px; margin-bottom: 30px;">
+                        <input type="text" placeholder="Full Name" required style="padding: 15px; border: 2px solid var(--medium-gray); border-radius: 10px; font-size: 1rem;">
+                        <input type="email" placeholder="Email Address" required style="padding: 15px; border: 2px solid var(--medium-gray); border-radius: 10px; font-size: 1rem;">
+                        <input type="text" placeholder="Country" required style="padding: 15px; border: 2px solid var(--medium-gray); border-radius: 10px; font-size: 1rem;">
+                        <textarea placeholder="Why do you want to join the 6,400 careers mission? What skills can you contribute?" rows="4" required style="padding: 15px; border: 2px solid var(--medium-gray); border-radius: 10px; font-size: 1rem;"></textarea>
+                    </div>
+                    <button type="submit" style="background: var(--gradient-1); color: white; border: none; padding: 18px 40px; border-radius: 50px; font-weight: 700; font-size: 1.1rem; cursor: pointer; transition: all 0.3s;">Submit Application</button>
+                </form>
+            </div>
+            
+            <!-- Social Links -->
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/nirobdigitalai/" class="social-link linkedin">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://x.com/digitalnirobai" class="social-link twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://www.instagram.com/digitalnirobai/" class="social-link instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.threads.com/@digitalnirobai" class="social-link threads">
+                    <i class="fab fa-threads"></i>
+                </a>
+                <a href="https://digitalnirobai.blogspot.com/" class="social-link">
+                    <i class="fas fa-blog"></i>
+                </a>
+                <a href="mailto:monbodol@proton.me" class="social-link">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </main>
+        
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-logo">NirobDigital</div>
+            <p class="footer-tagline">From a single vision in Dhaka to 6,400 digital careers worldwide. We're building the future of work, one opportunity at a time.</p>
+            
+            <div style="margin: 30px 0;">
+                <p><strong>Contact:</strong> monbodol@proton.me</p>
+                <p><strong>Blog:</strong> https://digitalnirobai.blogspot.com/</p>
+                <p><strong>Location:</strong> Dhaka, Bangladesh → Global Impact</p>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2024 Nirob Digital. All rights reserved.</p>
+                <p style="margin-top: 10px; font-size: 0.9rem;">Mission: 6,400 Sustainable Digital Careers | Vision: Global Digital Work Revolution</p>
+            </div>
+        </footer>
+    </div>
+    
+    <script>
+        // Animated Counter
+        function animateCounter(element, start, end, duration) {
+            let startTime = null;
+            const step = (timestamp) => {
+                if (!startTime) startTime = timestamp;
+                const progress = Math.min((timestamp - startTime) / duration, 1);
+                const current = Math.floor(progress * (end - start) + start);
+                element.textContent = current.toLocaleString();
+                if (progress < 1) {
+                    window.requestAnimationFrame(step);
+                }
+            };
+            window.requestAnimationFrame(step);
+        }
+
+        // Create Particles
+        function createParticles() {
+            const particlesContainer = document.getElementById('particles');
+            const particleCount = 30;
+            
+            for (let i = 0; i < particleCount; i++) {
+                const particle = document.createElement('div');
+                particle.classList.add('particle');
+                
+                // Random properties
+                const size = Math.random() * 10 + 5;
+                const posX = Math.random() * 100;
+                const posY = Math.random() * 100;
+                const delay = Math.random() * 5;
+                const duration = Math.random() * 10 + 5;
+                
+                particle.style.width = `${size}px`;
+                particle.style.height = `${size}px`;
+                particle.style.left = `${posX}%`;
+                particle.style.top = `${posY}%`;
+                particle.style.animationDelay = `${delay}s`;
+                particle.style.animationDuration = `${duration}s`;
+                particle.style.opacity = Math.random() * 0.3 + 0.1;
+                
+                particlesContainer.appendChild(particle);
+            }
+        }
+
+        // Show Application Form
+        function showApplicationForm() {
+            const form = document.getElementById('application-form');
+            form.style.display = 'block';
+            form.scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // Initialize when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            // Start counter animation
+            const counterElement = document.getElementById('counter');
+            animateCounter(counterElement, 0, 6400, 2000);
+            
+            // Create particles
+            createParticles();
+            
+            // Add hover effect to all cards
+            const cards = document.querySelectorAll('.feature-card, .country-card, .stat-card');
+            cards.forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-10px)';
+                });
+                
+                card.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0)';
+                });
+            });
+            
+            // Form submission
+            const form = document.getElementById('creatorForm');
+            if (form) {
+                form.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    alert('Thank you for your application! We will contact you within 48 hours.');
+                    form.reset();
+                });
+            }
+            
+            // Scroll animations
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, observerOptions);
+            
+            // Observe all sections
+            document.querySelectorAll('.section').forEach(section => {
+                section.style.opacity = '0';
+                section.style.transform = 'translateY(30px)';
+                section.style.transition = 'opacity 0.6s, transform 0.6s';
+                observer.observe(section);
+            });
+        });
+
+        // Parallax effect on scroll
+        window.addEventListener('scroll', function() {
+            const scrolled = window.pageYOffset;
+            const particles = document.querySelector('.particles');
+            if (particles) {
+                particles.style.transform = `translateY(${scrolled * 0.5}px)`;
+            }
+        });
+    </script>
+</body>
+</html>
